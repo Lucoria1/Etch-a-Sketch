@@ -1,0 +1,16 @@
+.boxCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+}
+
+.box {
+    border-style: solid;
+    height: 40px;
+    width: 40px;
+}
+
+.box17 {
+    flex-basis: 100%;
+}
