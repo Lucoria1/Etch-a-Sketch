@@ -41,7 +41,6 @@ document.querySelector(".newGrid").addEventListener("click", () => {
                 } else {
                     alert("Pick a number between 1-100!")}
 
-    
 })
 
 
