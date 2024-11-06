@@ -10,12 +10,9 @@ for (let i = 1; i <= 16; i++){
         document.querySelector(".boxCont").appendChild(div);
 }
 
-let boxes = document.querySelectorAll(".box");
+document.querySelectorAll(".box").forEach((item) => {
+    item.addEventListener("mouseover", (event) => {
+        event.target.style.backgroundColor = "black";
+       })
+});
 
-boxes.forEach(createListeners);
-
-function createListeners (item){
-   item.addEventListener("mouseover", (event) => {
-    event.target.style.backgroundColor = "black";
-   }) 
-}
