@@ -1,5 +1,6 @@
-.body {
+.contCont {
     display: flex;
+    justify-content: center;
 }
 
 .btnCont{
@@ -10,8 +11,8 @@
 .boxCont {
     display: flex;
     justify-content: center;
-    height: 750px;
-    width: 750px;
+    height: 700px;
+    width: 700px;
 }
 
 /* .box {
