@@ -16,3 +16,8 @@ document.querySelectorAll(".box").forEach((item) => {
        })
 });
 
+document.querySelector(".newGrid").addEventListener("click", () => {
+    document.querySelectorAll(".box").forEach((item) => {
+        item.remove();
+    })
+})
