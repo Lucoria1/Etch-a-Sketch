@@ -15,17 +15,6 @@
     width: 700px;
 }
 
-/* .box {
-    border-style: solid;
-    height: 20px;
-    width: 20px
-}
-
-.break {
-    flex-basis: 100%;
-    border-style: dotted;
-}
- */
 .column {
     display: flex;
     /* border-style: solid; */
@@ -36,6 +25,7 @@
 .row {
     display: flex;
     flex-direction: row;
+    border: 1px;
     border-style: solid;
     flex-basis: 100%;
 }
