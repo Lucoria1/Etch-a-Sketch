@@ -18,23 +18,45 @@ function createGrid (param){
     
         let mouseCount = 0;
 
-    document.querySelectorAll(".row").forEach((item) => {
-        item.addEventListener("mouseover", (event) => {
+        document.querySelectorAll(".row").forEach((item) => {
+            item.addEventListener("mouseover", (event) => {
+                event.target.style.backgroundColor = "black";
+                mouseCount++;
+                // console.log(mouseCount);
+                })
+        })
 
-            let r = (Math.random() * 255).toFixed(0);
-            // console.log (r);
+        document.querySelector(".Rainbow").addEventListener("click", () => {
+            document.querySelectorAll(".row").forEach((item) => {
+                item.addEventListener("mouseover", (event) => {
+        
+                    let r = (Math.random() * 255).toFixed(0);
+                    // console.log (r);
+        
+                    let g = (Math.random() * 255).toFixed(0);
+                    // console.log (g);
+        
+                    let b = (Math.random() * 255).toFixed(0);
+                    // console.log (b);
+                    
+                    event.target.style.backgroundColor = `rgb(${r},${g},${b})`;
+                    mouseCount++;
+                    // console.log(mouseCount);
+                    })
+            });
+        
+        })
 
-            let g = (Math.random() * 255).toFixed(0);
-            // console.log (g);
-
-            let b = (Math.random() * 255).toFixed(0);
-            // console.log (b);
-            
-            event.target.style.backgroundColor = `rgb(${r},${g},${b})`;
-            mouseCount++;
-            // console.log(mouseCount);
-            })
-    });
+        document.querySelector(".Black").addEventListener("click", () => {
+            document.querySelectorAll(".row").forEach((item) => {
+                item.addEventListener("mouseover", (event) => {
+                    event.target.style.backgroundColor = "black";
+                    mouseCount++;
+                    // console.log(mouseCount);
+                    })
+            });
+        
+        })
         
 }
 
