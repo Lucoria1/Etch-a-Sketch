@@ -16,9 +16,23 @@ function createGrid (param){
             }
         }
     
+        let mouseCount = 0;
+
     document.querySelectorAll(".row").forEach((item) => {
         item.addEventListener("mouseover", (event) => {
-            event.target.style.backgroundColor = "black";
+
+            // let r = (Math.random() * 255).toFixed(0);
+            // console.log (r);
+
+            // let g = (Math.random() * 255).toFixed(0);
+            // console.log (g);
+
+            // let b = (Math.random() * 255).toFixed(0);
+            // console.log (b);
+            
+            event.target.style.backgroundColor = `rgb(${r},${g},${b})`;
+            mouseCount++;
+            // console.log(mouseCount);
             })
     });
         
