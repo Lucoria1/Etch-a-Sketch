@@ -18,8 +18,8 @@ function createGrid (param){
                 rowCount++
             }
         }
-}
-    
+
+
 
 document.querySelectorAll(".row").forEach((item) => {
     item.addEventListener("mouseover", (event) => {
@@ -65,9 +65,7 @@ document.querySelector(".shading").addEventListener("click", () => {
             })
     })
 })
-
-        
-
+}
 
 document.querySelector(".newGrid").addEventListener("click", () => {
     let boxNum = prompt("How wide do you want your grid?")
@@ -87,6 +85,9 @@ document.querySelector(".newGrid").addEventListener("click", () => {
                     alert("Pick a number between 1-100!")}
 
 })
+      
+
+
 
 
 
