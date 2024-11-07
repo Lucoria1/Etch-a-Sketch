@@ -21,13 +21,13 @@ function createGrid (param){
     document.querySelectorAll(".row").forEach((item) => {
         item.addEventListener("mouseover", (event) => {
 
-            // let r = (Math.random() * 255).toFixed(0);
+            let r = (Math.random() * 255).toFixed(0);
             // console.log (r);
 
-            // let g = (Math.random() * 255).toFixed(0);
+            let g = (Math.random() * 255).toFixed(0);
             // console.log (g);
 
-            // let b = (Math.random() * 255).toFixed(0);
+            let b = (Math.random() * 255).toFixed(0);
             // console.log (b);
             
             event.target.style.backgroundColor = `rgb(${r},${g},${b})`;
